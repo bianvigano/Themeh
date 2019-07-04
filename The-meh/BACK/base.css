@@ -17,7 +17,7 @@ this is my data, Congratulations you have managed to enter here :s
 /* Variables */
 :root {
   --theme-version: "1.0";
-  --main-color: #16356d;
+/*   --main-color: #16356d; */
   --hover-color: #1c4faf;
   --online: #43b581;
   --idle: #faa61a;
@@ -32,6 +32,9 @@ this is my data, Congratulations you have managed to enter here :s
   --shadow: rgba(0,0,0,.4);
   --alert-display: block;
   --accent: var(--main-color);
+
+  /*text*/
+  --main-color-text: #757576;
 }
 /* Table of Contents
     ======== STATIC ==========
@@ -380,9 +383,9 @@ svg[name="Activity"] {
 
 /* 2. Chat Header */
   /* 2.a. Coloring and Spacing */
-/* .toolbar-1t6TWx {
+.toolbar-1t6TWx {
   margin-right: 96px;
-} */
+}
 
 .title-3qD0b-,
 .header-2o-2hj,
@@ -993,7 +996,7 @@ color: var(--dnd) !important;
 
 #app-mount .acronym-2mOFsV:hover {
   border: none;
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
 }
 
 .item-2hkk8m[style*="opacity: 0.7"] {
@@ -1534,14 +1537,15 @@ color: var(--dnd) !important;
   overflow: hidden;
 }
 
-  /* 7.b. Hoisted Roles */
+ /* 7.b. Hoisted Roles */
 .membersGroup-v9BXpm {
-  color: var(--main-color) !important;
+  margin: auto;
+  color: var(--main-color-text) !important;
   border-bottom: 3px solid;
   border-image: linear-gradient(90deg, transparent, var(--main-color), transparent);
   border-image-slice: 1;
   padding: 19px 16px 6px 16px;
-  margin: 4px 0px 10px 15px;
+  margin: 4px 0px 4px 37px;
   font-weight: 600;
   text-align: center;
   border-radius: 3px;
@@ -2641,84 +2645,14 @@ pre {
   -webkit-mask-image: none;
   mask-image: none;
 }
-  
-  /* 11.b. Status */
-.member-3W1lQa [class*="status-"] {
-  transition: all ease .05s
+    
+/* 11.b. Status */
+ .member-3W1lQa [class*="status-"] {
+  transition: all ease .05s;
 }
 
-#app-mount .status-oxiHuE:not(.status-3fQvEa) {
-  height: 100% !important;
-  width: 100% !important;
-  margin: 0;
-  top: 0;
-  left: 0;
-  background: transparent;
-  border:2px solid;
-  box-sizing: border-box;
-  transition-duration: .5s;
-  box-shadow: none;
-  pointer-events: none;
-}
 
-.status-oxiHuE:not(.status-3fQvEa).online-2S838R {
-   border-color: var(--online) !important;
-}
-
-.status-oxiHuE:not(.status-3fQvEa).idle-3DEnRT {
-  border-color: var(--idle) !important;
-}
-
-.status-oxiHuE:not(.status-3fQvEa).dnd-1_xrcq {
-  border-color: var(--dnd) !important;
-}
-
-.status-oxiHuE:not(.status-3fQvEa).streaming-2_dnHe {
-  border-color: var(--streaming) !important;
-}
-
-.status-oxiHuE:not(.status-3fQvEa).offline-3qoTek {
-  border-color: var(--offline) !important;
-}
-
-.status-oxiHuE:not(.status-3fQvEa).invisible-1kp8Z0 {
-  border-color: var(--invisible) !important;
-}
-
-  /* 11.c. Typing */
-#app-mount .status-oxiHuE.typing-1KJk_j {
-  background-color: rgba(0, 0, 0, .6);
-}
-
-.status-oxiHuE.typing-1KJk_j .pulsingEllipsisItem-32hhWL {
-  height: 3px;
-  width: 3px;
-}
-
-.status-oxiHuE.typing-1KJk_j.online-2S838R.typing-1KJk_j .pulsingEllipsisItem-32hhWL {
-  background-color: var(--online) !important;
-}
-
-.status-oxiHuE.typing-1KJk_j.idle-3DEnRT.typing-1KJk_j .pulsingEllipsisItem-32hhWL {
-  background-color: var(--idle) !important;
-}
-
-.status-oxiHuE.typing-1KJk_j.dnd-1_xrcq.typing-1KJk_j .pulsingEllipsisItem-32hhWL {
-  background-color: var(--dnd) !important;
-}
-
-.status-oxiHuE.typing-1KJk_j.streaming-2_dnHe.typing-1KJk_j .pulsingEllipsisItem-32hhWL {
-  background-color: var(--streaming) !important;
-}
-
-.status-oxiHuE.typing-1KJk_j.offline-3qoTek.typing-1KJk_j .pulsingEllipsisItem-32hhWL {
-  background-color: var(--offline) !important;
-}
-
-.status-oxiHuE.typing-1KJk_j.invisible-1kp8Z0.typing-1KJk_j .pulsingEllipsisItem-32hhWL {
-  background-color: var(--invisible) !important;
-}
-
+ /* 11.c. Typing */
 .avatarUploaderInner-3UNxY3 {
   background-color: var(--main-color);
 }
@@ -2829,7 +2763,7 @@ pre {
 .base-PmTxvP,
 #app-mount foreignObject,
 #app-mount .avatar-3elDyV {
-  border-radius: var(--roundness) !important;
+  /* border-radius: var(--roundness) !important; */
 }
 
 
@@ -4730,7 +4664,7 @@ pre {
   background-color: var(--tertiary-color) !important;
 }
 
-.botTagRegular-2HEhHi,
+/* .botTagRegular-2HEhHi,
 .aka-1mqp34,
 #app-mount .akaBadge-1M-1Gw,
 .wanderingCubesItem-WPXqao,
@@ -4738,7 +4672,7 @@ pre {
 .bd-server-card.bd-server-card-pinned:after,
 .keybindShortcut-1BD6Z1 span {
   background-color: var(--main-color) !important;
-}
+} */
 
 .mediaBarInteractionDragging-2QurIZ .mediaBarGrabber-1FqnbN,
 .mediaBarProgress-1xaPtl,
@@ -5152,3 +5086,4 @@ div.reply-item {
   }
   
 }
+
