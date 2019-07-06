@@ -38,6 +38,12 @@ this is my data, Congratulations you have managed to enter here :s
 
   /*Scroll-bars*/
   --main-color-Scrollbars: #2f3136;
+  
+  /*Channels*/
+  --main-color-border-channels: #747f8d;
+
+  --size-channels-guile: 4px;
+  --size-channels-guile-notifikasi: 2px;
 }
 /* Table of Contents
     ======== STATIC ==========
@@ -1196,8 +1202,9 @@ color: var(--dnd) !important;
 }
 
 .wrapper-1ucjTd.modeSelected-1zApJ_ {
-  background-color: var(--quaternary-color);
-  border-left-color: var(--main-color);
+  margin-top: var(--size-channels-guile);
+  background-color: #101011;
+  border-left-color: var(--main-color-border-channels);
 }
 
 #app-mount .wrapper-pZmgj4 {
@@ -1225,6 +1232,19 @@ color: var(--dnd) !important;
   z-index: 2;
 }
 
+.iconVisibility-1bOqu7.da-iconVisibility.wrapper-1ucjTd.da-wrapper.modeUnread-1zpFdA {
+    margin-top: var(--size-channels-guile-notifikasi);
+    border-left: 0px;
+    background: #101011;
+}
+
+.unread-3zKkbm.da-unread {
+    background: var(--main-color-border-channels);
+    box-shadow: 0 0 12px var(--main-color-border-channels);
+    height: 8px;
+    width: 4px;
+}
+
   /* 5.e. Unread Indicator */
 .unread-1Dp-OI {
   background-color: var(--hover-color);
@@ -1249,13 +1269,11 @@ color: var(--dnd) !important;
 .containerDragAfter-3TEhpe, 
 .containerDragBefore-3Dzc5x, 
 .containerUserOver-1Tcb7l {
-  padding-top: 0;
-  margin-top: 12px;
-  margin-bottom: 6px;
+  padding-top: 0px;
+  margin-top: 4px;
   background-color: var(--quaternary-color);
-  margin-left: 0px;
   height: 31.11px;
-  padding: 0 8px;
+  padding: 0px 1px;
   border-radius: 0px;
 }
   
