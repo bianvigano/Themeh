@@ -1,5 +1,14 @@
-:root {
+/*  
+___________.__                               .__     
+\__    ___/|  |__   ____        _____   ____ |  |__  
+  |    |   |  |  \_/ __ \      /     \_/ __ \|  |  \ 
+  |    |   |   Y  \  ___/     |  Y Y  \  ___/|   Y  \
+  |____|   |___|  /\___  >____|__|_|  /\___  >___|  /
+                \/     \/_____/     \/     \/     \/ 
+this is my data, Congratulations you have managed to enter here :s
+*/
 
+:root {
     --online: #43b592;
     --offline: #747f8d;
     --idle: #faa61a;
@@ -159,6 +168,7 @@
     opacity: 0.7;
     z-index: 0;
 }
+
 /*status TEPBEL Text / sT*/
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnStatus-ZH4ho2 .statusText-2F9zIF {
     color: #fff;
@@ -229,10 +239,10 @@
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M .friendsAction-__WNE9:nth-child(2) {
     border-radius: 6px;
     background-color: rgba(0, 0, 0, 0.5);
-    /* box-shadow: 0 0 10px 0 var(--mc) */
+/*  box-shadow: 0 0 10px 0 var(--mc); */
 }
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M .friendsAction-__WNE9:hover {
-    background-color: rgba(0, 255, 9, 0.4)
+    background-color: rgba(255, 0, 0, 0.4)
 }
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnStatus-ZH4ho2 .status.status-unknown {
     border: none
