@@ -17,7 +17,7 @@ this is my data, Congratulations you have managed to enter here :s
 /* Variables */
 :root {
   --theme-version: "1.0";
-/*   --main-color: #16356d; */
+  --main-color: #16356d;
   --hover-color: #1c4faf;
   --online: #43b581;
   --idle: #faa61a;
@@ -35,6 +35,9 @@ this is my data, Congratulations you have managed to enter here :s
 
   /*text*/
   --main-color-text: #757576;
+
+  /*Scroll-bars*/
+  --main-color-Scrollbars: #2f3136;
 }
 /* Table of Contents
     ======== STATIC ==========
@@ -383,10 +386,6 @@ svg[name="Activity"] {
 
 /* 2. Chat Header */
   /* 2.a. Coloring and Spacing */
-.toolbar-1t6TWx {
-  margin-right: 96px;
-}
-
 .title-3qD0b-,
 .header-2o-2hj,
 .headerBar-UHpsPw {
@@ -1668,7 +1667,6 @@ a,
   /* 8.e. Chat Dividers */
 .chat-3bRxxu .divider-3gKybi {
   height: 28px;
-  background-color: transparent;
   margin: 10px 0px;
 }
 
@@ -1678,35 +1676,23 @@ a,
 }
 
 .chat-3bRxxu .divider-3gKybi>span {
-  color: #a0a0a0 !important;
   border-radius: 3px;
-  position: relative;
   text-align: left;
   font-size: 12px;
   text-transform: uppercase;
   margin: 0px 0px;
   opacity: 1;
-  padding: 5px 15px;
+  padding: 15px 15px;
   width: 100%;
   background: transparent !important;
   box-sizing: border-box !important;
 }
 
 .chat-3bRxxu .divider-3gKybi.dividerRed-MKoLlr>span {
-  color: var(--main-color) !important;
-  background-color: var(--quaternary-color) !important;
   border-radius: 3px;
   justify-content: center;
   left: 0px;
   margin-bottom: 10px;
-}
-
-.containerCozy-jafyvG .isMentionedCozy-3isp7y:after,
-.containerCozy-jafyvG .divider-32i8lo,
-.dividerContent-2L12VI:after, 
-.dividerContent-2L12VI:before,
-.jumpToPresentBar-9P20AM button:first-of-type {
-  display: none;
 }
 
   /* 8.f. Mentions */
@@ -2820,7 +2806,7 @@ pre {
 .scrollerWrap-2lJEkd .scroller-2CvAgC::-webkit-scrollbar-thumb,
 .chat-3bRxxu .textArea-2Spzkt::-webkit-scrollbar-thumb,
 .sb-menu-scroller::-webkit-scrollbar-thumb {
-  background-color: var(--main-color) !important;
+  background-color: var(--main-color-Scrollbars) !important;
   border-color: transparent !important;
   border-radius: 40px;
 }
