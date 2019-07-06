@@ -7,6 +7,25 @@
     --dnd: #f04747;
     --invis: #1a36fa;
 }
+
+/* Bg Belakang Foto kita */
+.friendsRow-2yicud .inner-1W0Bkn::after {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 28px;
+    height: 145px;
+    width: 250px;
+    z-index: -1;
+    background: inherit;
+    filter: blur(18px) brightness(0.65);
+    transition: transform 515ms ease 0s, filter 350ms ease 0s;
+}
+
+.friendsTable-133bsv .friendsRow-2yicud:hover .friendsColumnName-1zBOKm .avatarSmall--gkJKA .inner-1W0Bkn::after {
+    transform: scale(1.25);
+}
+
 @media (max-width: 1300px) {
     .container-3gCOGc .friendsTable-133bsv .friendsColumnGuilds-2we6jb {
         display:inline-flex !important
@@ -30,7 +49,7 @@
     display: inline-block;
     justify-content: center;
     align-items: center;
-    position: relative
+    position: relative;
 }
 
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud:hover {
@@ -69,37 +88,68 @@
 }
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumn-eVHFqJ {
     position: absolute;
-    backface-visibility: hidden
+    backface-visibility: hidden;
 }
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumn-eVHFqJ+.friendsColumn-eVHFqJ {
-    margin: 0
+    margin: 0;
 }
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnName-1zBOKm .avatarSmall--gkJKA {
-    top: 25px;left: 5px;
-    width: 85px;height: 85px;
+    top: 25px;
+    left: 5px;
+    width: 85px;
+    height: 85px;
     background-size: 85px 85px;
-    box-shadow: none;opacity: 0.8;
+    box-shadow: none;
+    opacity: 0.8;
     transition: opacity 500ms, transform .2s linear, box-shadow .2s linear;
     transform: scale(0.97) perspective(1px);
 }
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud:hover .friendsColumnName-1zBOKm .avatarSmall--gkJKA {
     opacity: 1;transform: scale(1) perspective(1px);box-shadow: none
 }
+
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnName-1zBOKm .discord-tag {
-    display: block;position: absolute;
-    top: 20px;overflow:visible;
-    z-index:10;left: 115px;
+    display: block;
+    position: absolute;
+    top: 30px;
+    overflow:visible;
+    z-index:10;
+    left: 111px;
+    color:white;
     text-shadow: 1px 1px 1px hsl(0, 0%, 0%);
 }
 
-#app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnName-1zBOKm .discord-tag .discriminator {
-    visibility: hidden;opacity: .9
+.friendsColumnName-1zBOKm .discriminator {
+    visibility: visible !important;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    color: rgba(255, 255, 255, 0.38);
+    opacity: 1 !important;
+    transition: .15s ease color;
 }
-#app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud:hover .friendsColumnName-1zBOKm .discord-tag .discriminator {
-    visibility: visible
+
+.friendsRow-2yicud .friendsColumnName-1zBOKm .discord-tag {
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: 64px;
+    color: rgba(255,255,255,0.65);
+    font-size: 20px;
+    overflow: visible;
+    transition: .15s ease color;
 }
+
+.friendsRow-2yicud:hover .friendsColumnName-1zBOKm .username {
+    color: rgba(255,255,255,0.9);
+}
+
+
+
+/*status TEPBEL / sT*/
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnStatus-ZH4ho2 .status-mz5rqq, 
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnStatus-ZH4ho2 {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.46);
     width: 100%;
     left: 2px;
     justify-content: center;
@@ -107,8 +157,9 @@
     border-radius: 5px 5px 0 0;
     top: 0;
     opacity: 0.7;
-    z-index: 0
+    z-index: 0;
 }
+/*status TEPBEL Text / sT*/
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnStatus-ZH4ho2 .statusText-2F9zIF {
     color: #fff;
     font-weight: 700;
@@ -120,15 +171,17 @@
     transition: color 300ms;
     position: absolute;
     overflow: visible;
-    z-index: 0
+    z-index: 0;
 }
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud:hover .friendsColumnStatus-ZH4ho2 .statusText-2F9zIF {
-    color: var(--mc);
+    text-shadow: 2px 2px 4px #000000;
     opacity: 1
 }
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsTableBody-1ZhKif .friendsRow-2yicud .friendsColumnGuilds-2we6jb {
-    top: 90px;left: 115px;
-    width: 150px;display: flex
+    top: 94px;
+    left: 101px;
+    width: 150px;
+    display: flex;
 }
 .container-3gCOGc .friendsTable-133bsv .friendsTableBody-1ZhKif .friendsRow-2yicud .friendsColumnGuilds-2we6jb .iconSizeSmall-3aWgx9 {
     opacity: 0.8;transition: opacity 500ms
@@ -154,9 +207,11 @@
     border: 0;color: transparent
 }
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M {
-    top: 45px;right: 10px;opacity: 0;
+    top: 60px;
+    right: 1px;
+    opacity: 0;
     transition: opacity 400ms;
-    visibility: visible
+    visibility: visible;
 }
 
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud:hover .friendsColumnActions-1LT3_M {
@@ -174,7 +229,7 @@
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M .friendsAction-__WNE9:nth-child(2) {
     border-radius: 6px;
     background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 10px 0 var(--mc)
+    /* box-shadow: 0 0 10px 0 var(--mc) */
 }
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M .friendsAction-__WNE9:hover {
     background-color: rgba(0, 255, 9, 0.4)
@@ -210,7 +265,7 @@
 }
 #app-mount .container-3gCOGc .friendsTable-133bsv .dnd-1_xrcq {
     background-color: var(--dnd);
-    box-shadow: none !important
+    box-shadow: none !important;
 }
 #app-mount .container-3gCOGc .friendsTable-133bsv .idle-3DEnRT {
     background-color: var(--idle);
