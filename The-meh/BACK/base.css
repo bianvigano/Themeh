@@ -2764,36 +2764,73 @@ pre {
 #app-mount .status-oxiHuE.animate-iYrs3- {transition: none}
 #app-mount .titleText-3X-zRE {overflow: visible}
 
+/* online */
 #app-mount 
 .online-2S838R {
-    background-color: transparent;
     box-shadow: 0 0 var(--sGlow) var(--online) !important
 }
+
+.status-oxiHuE:not(.status-3fQvEa).online-2S838R {
+  background-color: transparent;
+  border-color: var(--online) !important;
+}
+
+/* streaming */
 #app-mount 
 .streaming-2_dnHe {
-    background-color: transparent;
     box-shadow: 0 0 var(--sGlow) var(--stream) !important
 }
+
+.status-oxiHuE:not(.status-3fQvEa).streaming-2_dnHe {
+  background-color: transparent;
+  border-color: var(--stream) !important;
+}
+
+/* DND */
 #app-mount 
 .dnd-1_xrcq {
-    background-color: transparent;
     box-shadow: 0 0 var(--sGlow) var(--dnd) !important;
 }
+
+.status-oxiHuE:not(.status-3fQvEa).dnd-1_xrcq {
+  background-color: transparent;
+  border-color: var(--dnd) !important;
+}
+
+/* Idle */
 #app-mount 
 .idle-3DEnRT {
-    background-color: transparent;
     box-shadow: 0 0 var(--sGlow) var(--idle) !important
 }
+
+.status-oxiHuE:not(.status-3fQvEa).idle-3DEnRT {
+  background-color: transparent;
+  border-color: var(--idle) !important;
+}
+
+/* invisible */
 #app-mount 
 .invisible-1kp8Z0 {
-    background-color: transparent;
     box-shadow: 0 0 var(--sGlow) var(--invis) !important
 }
+
+.status-oxiHuE:not(.status-3fQvEa).invisible-1kp8Z0 {
+  background-color: transparent;
+  border-color: var(--invis) !important;
+}
+
+/* offline */
 #app-mount .offline-3qoTek,
 #app-mount .unknown-Ms2zdV {
-    background-color: transparent;
     box-shadow: 0 0 var(--sGlow) var(--offline) !important
 }
+
+.status-oxiHuE:not(.status-3fQvEa).offline-3qoTek,
+.status-oxiHuE:not(.status-3fQvEa).unknown-Ms2zdV {
+  background-color: transparent;
+  border-color: var(--offline) !important;
+}
+/*========================================================*/
 
 #app-mount .online-2S838R, 
 #app-mount .streaming-2_dnHe, 
