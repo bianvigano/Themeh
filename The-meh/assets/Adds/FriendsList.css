@@ -17,6 +17,14 @@ this is my data, Congratulations you have managed to enter here :s
     --invis: #1a36fa;
 }
 
+.friendsTable-133bsv .scroller-2FKFPG>div:not(.friendsRow-2yicud),
+.friendsTable-133bsv .scroller-2FKFPG {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 /* Bg Belakang Foto kita */
 .friendsRow-2yicud .inner-1W0Bkn::after {
     content: '';
@@ -31,7 +39,8 @@ this is my data, Congratulations you have managed to enter here :s
     transition: transform 515ms ease 0s, filter 350ms ease 0s;
 }
 
-.friendsTable-133bsv .friendsRow-2yicud:hover .friendsColumnName-1zBOKm .avatarSmall--gkJKA .inner-1W0Bkn::after {
+.friendsTable-133bsv .friendsRow-2yicud:hover 
+.friendsColumnName-1zBOKm .avatarSmall--gkJKA .inner-1W0Bkn::after {
     transform: scale(1.25);
 }
 
@@ -71,7 +80,8 @@ this is my data, Congratulations you have managed to enter here :s
     transform: scale(.98)
 }
 
-#app-mount .container-3gCOGc .friends-header .tabBar-1E2ExX .item-3HpYcP .badge-1GsMF2 {
+#app-mount .container-3gCOGc .friends-header 
+.tabBar-1E2ExX .item-3HpYcP .badge-1GsMF2 {
     background: rgba(0, 0, 0, 0.4) ;
     color: var(--mc) ;
     opacity: 0.7;
@@ -113,11 +123,13 @@ this is my data, Congratulations you have managed to enter here :s
     transition: opacity 500ms, transform .2s linear, box-shadow .2s linear;
     transform: scale(0.97) perspective(1px);
 }
-#app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud:hover .friendsColumnName-1zBOKm .avatarSmall--gkJKA {
+#app-mount .container-3gCOGc .friendsTable-133bsv 
+.friendsRow-2yicud:hover .friendsColumnName-1zBOKm .avatarSmall--gkJKA {
     opacity: 1;transform: scale(1) perspective(1px);box-shadow: none
 }
 
-#app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnName-1zBOKm .discord-tag {
+#app-mount .container-3gCOGc .friendsTable-133bsv 
+.friendsRow-2yicud .friendsColumnName-1zBOKm .discord-tag {
     display: block;
     position: absolute;
     top: 30px;
@@ -156,7 +168,8 @@ this is my data, Congratulations you have managed to enter here :s
 
 
 /*status TEPBEL / sT*/
-#app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnStatus-ZH4ho2 .status-mz5rqq, 
+#app-mount .container-3gCOGc .friendsTable-133bsv 
+.friendsRow-2yicud .friendsColumnStatus-ZH4ho2 .status-mz5rqq, 
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnStatus-ZH4ho2 {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.46);
     width: 100%;
@@ -170,7 +183,8 @@ this is my data, Congratulations you have managed to enter here :s
 }
 
 /*status TEPBEL Text / sT*/
-#app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnStatus-ZH4ho2 .statusText-2F9zIF {
+#app-mount .container-3gCOGc .friendsTable-133bsv 
+.friendsRow-2yicud .friendsColumnStatus-ZH4ho2 .statusText-2F9zIF {
     color: #fff;
     font-weight: 700;
     opacity:0.8;
@@ -183,24 +197,51 @@ this is my data, Congratulations you have managed to enter here :s
     overflow: visible;
     z-index: 0;
 }
-#app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud:hover .friendsColumnStatus-ZH4ho2 .statusText-2F9zIF {
+#app-mount .container-3gCOGc .friendsTable-133bsv 
+.friendsRow-2yicud:hover .friendsColumnStatus-ZH4ho2 .statusText-2F9zIF {
     text-shadow: 2px 2px 4px #000000;
     opacity: 1
 }
-#app-mount .container-3gCOGc .friendsTable-133bsv .friendsTableBody-1ZhKif .friendsRow-2yicud .friendsColumnGuilds-2we6jb {
+
+#app-mount .container-3gCOGc
+.friendsTable-133bsv .friendsTableBody-1ZhKif 
+.friendsRow-2yicud .friendsColumnGuilds-2we6jb {
     top: 94px;
-    left: 101px;
-    width: 150px;
+    left: 108px;
+    height: 27px !important;
     display: flex;
 }
-.container-3gCOGc .friendsTable-133bsv .friendsTableBody-1ZhKif .friendsRow-2yicud .friendsColumnGuilds-2we6jb .iconSizeSmall-3aWgx9 {
+.container-3gCOGc .friendsTable-133bsv 
+.friendsTableBody-1ZhKif .friendsRow-2yicud 
+.friendsColumnGuilds-2we6jb .iconSizeSmall-3aWgx9 {
     opacity: 0.8;transition: opacity 500ms
 }
-#app-mount .container-3gCOGc .friendsTable-133bsv .friendsTableBody-1ZhKif .friendsRow-2yicud:hover .friendsColumnGuilds-2we6jb .iconSizeSmall-3aWgx9 {
+#app-mount .container-3gCOGc .friendsTable-133bsv 
+.friendsTableBody-1ZhKif .friendsRow-2yicud:hover 
+.friendsColumnGuilds-2we6jb .iconSizeSmall-3aWgx9 {
     opacity: 1
 }
+
+/*==================================================================*/
+.friendsColumnGuilds-2we6jb {
+    margin-top: 2px !important;
+    margin-left: 8px !important;
+}
+
+.friendsTable-133bsv .iconSizeSmall-3aWgx9,
+.friendsColumnGuilds-2we6jb .moreMutualGuildsBtn-2VwbkO {
+	height: 25px !important;
+	width: 25px !important;
+	margin: 2px !important;
+	font-size: 9px;
+}
+
+.friendsTable-133bsv .friendsColumnGuilds-2we6jb a+a {
+	margin: 0 !important;
+}
+/*==================================================================*/
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnGuilds-2we6jb .iconSizeSmall-3aWgx9 {
-    background-color: rgba(0, 0, 0, 0.4)
+    background-color: rgba(0, 0, 0, 0.4);
 }
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnGuilds-2we6jb .more-mutual-guilds-btn:before {
     content: "";
@@ -213,7 +254,11 @@ this is my data, Congratulations you have managed to enter here :s
     box-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.5);
     position: relative;top: 0
 }
-#app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnGuilds-2we6jb .more-mutual-guilds-btn, #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnGuilds-2we6jb .more-mutual-guilds-btn:hover {
+#app-mount .container-3gCOGc .friendsTable-133bsv 
+.friendsRow-2yicud .friendsColumnGuilds-2we6jb 
+.more-mutual-guilds-btn, #app-mount .container-3gCOGc 
+.friendsTable-133bsv .friendsRow-2yicud .friendsColumnGuilds-2we6jb 
+.more-mutual-guilds-btn:hover {
     border: 0;color: transparent
 }
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M {
@@ -265,6 +310,8 @@ this is my data, Congratulations you have managed to enter here :s
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M .friendsAction-__WNE9:nth-child(3) {
     transition: 700ms
 }
+
+/*==================================================================*/
 #app-mount .container-3gCOGc .friendsTable-133bsv .online-2S838R {
     background-color: var(--online);
     box-shadow: none !important
@@ -290,6 +337,8 @@ this is my data, Congratulations you have managed to enter here :s
     background-color: var(--offline);
     box-shadow: none !important
 }
+/*==================================================================*/
+
 #app-mount .container-3gCOGc .friendsTable-133bsv .friendsTableBody-1ZhKif {
     height: calc(100vh - 80px);
 }
