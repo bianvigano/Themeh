@@ -40,6 +40,8 @@ this is my data, Congratulations you have managed to enter here :s
   --size-channels-guile: 4px;
   --size-channels-guile-notifikasi: 2px;
 
+  --round-channels-voice: 50%
+
   /* Status */
   --sGlow: 5px 2px;
 
@@ -51,7 +53,6 @@ this is my data, Congratulations you have managed to enter here :s
   --invis: #1a36fa;
 
   --round: 0%;
-
 }
 /* Table of Contents
     ======== STATIC ==========
@@ -2726,12 +2727,24 @@ pre {
     width: 40px;
 }
 
+/* Channels-voice */
+.avatarContainer-2inGBK.avatar-3elDyV.da-avatar.avatarSmall-2CW6I1.da-avatarSmall,
+.image-33JSyf.da-image.activityFeed24-2yeMhq.da-activityFeed24 {
+  border-radius: var(--round-channels-voice);
+}
+
+
+/*  Main Channels Area Chat */
+.image-33JSyf.da-image.large-3ChYtB.da-large {
+    border-radius: var(--round);
+}
+
 #app-mount .status,
 #app-mount .status-oxiHuE,
-#app-mount .image-33JSyf,
+/* #app-mount .image-33JSyf, */
 #app-mount .avatarSmall-3ACRaI,
 #app-mount .inner-1W0Bkn,
-#app-mount .wrapper-2F3Zv8,
+/* #app-mount .wrapper-2F3Zv8, */
 #app-mount .status-2s6iDp,
 #app-mount .statusProfile-3ynqtt,
 #app-mount .partyMembers-2HCFEF,
