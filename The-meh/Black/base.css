@@ -12,6 +12,7 @@ this is my data, Congratulations you have managed to enter here :s
 @import "https://fonts.googleapis.com/css?family=Satisfy|Montserrat:300";
 @import "https://bianvigano.github.io/Themeh/The-meh/assets/addons/user-tags.css";
 @import "https://bianvigano.github.io/Themeh/The-meh/assets/addons/filter.css";
+@import url('https://bianvigano.github.io/Themeh/The-meh/assets/Adds/FriendsList.css');
 @import "https://www.themonster.xyz/styles/google-fonts.css";
 
 /* Variables */
@@ -2788,6 +2789,11 @@ pre {
   border-color: var(--online) !important;
 }
 
+.da-online.da-status.large-3ChYtB.da-large.status-3fQvEa.da-status.status-1XNdyw.da-status {
+    height: 8px;
+    width: 8px;
+}
+
 /* streaming */
 #app-mount 
 .streaming-2_dnHe {
@@ -2797,6 +2803,11 @@ pre {
 .status-oxiHuE:not(.status-3fQvEa).streaming-2_dnHe {
   background-color: transparent;
   border-color: var(--stream) !important;
+}
+
+.da-streaming.da-status.large-3ChYtB.da-large.status-3fQvEa.da-status.status-1XNdyw.da-status {
+    height: 8px;
+    width: 8px;
 }
 
 /* DND */
@@ -2810,15 +2821,25 @@ pre {
   border-color: var(--dnd) !important;
 }
 
+.da-dnd.da-status.large-3ChYtB.da-large.status-3fQvEa.da-status.status-1XNdyw.da-status {
+    height: 8px;
+    width: 8px;
+}
+
 /* Idle */
 #app-mount 
 .idle-3DEnRT {
-    box-shadow: 0 0 var(--sGlow) var(--idle) !important
+    box-shadow: 0 0 var(--sGlow) var(--idle) !important;
 }
 
 .status-oxiHuE:not(.status-3fQvEa).idle-3DEnRT {
   background-color: transparent;
   border-color: var(--idle) !important;
+}
+
+.da-idle.da-status.large-3ChYtB.da-large.status-3fQvEa.da-status.status-1XNdyw.da-status {
+    height: 8px;
+    width: 8px;
 }
 
 /* invisible */
@@ -2832,6 +2853,11 @@ pre {
   border-color: var(--invis) !important;
 }
 
+.da-invisible.da-status.large-3ChYtB.da-large.status-3fQvEa.da-status.status-1XNdyw.da-status {
+    height: 8px;
+    width: 8px;
+}
+
 /* offline */
 #app-mount .offline-3qoTek,
 #app-mount .unknown-Ms2zdV {
@@ -2842,6 +2868,11 @@ pre {
 .status-oxiHuE:not(.status-3fQvEa).unknown-Ms2zdV {
   background-color: transparent;
   border-color: var(--offline) !important;
+}
+
+.da-offline.da-status.large-3ChYtB.da-large.status-3fQvEa.da-status.status-1XNdyw.da-status {
+    height: 8px;
+    width: 8px;
 }
 /*========================================================*/
 
