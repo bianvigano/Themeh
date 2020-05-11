@@ -34,8 +34,9 @@ this is my data, Congratulations you have managed to enter here :s
   --alert-display: block;
   --accent: var(--main-color);
 }
+
 /* Table of Contents
-    ======== STATIC ==========
+======== STATIC ==========
  1. Title Bar
   1.a. Main Title Bar
   1.b. Mac Main Title Bar
@@ -186,8 +187,6 @@ this is my data, Congratulations you have managed to enter here :s
 
 22. @Media Edits
 */
-
-
 
 
 /* ================================= STATIC =======================================*/
@@ -476,6 +475,7 @@ svg[name="Activity"] {
   width: 100% !important;
 }
 
+/*foreignObject*/
 #app-mount foreignObject {
   mask: none !important;
   -webkit-mask: none !important;
