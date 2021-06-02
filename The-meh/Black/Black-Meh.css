@@ -13,9 +13,15 @@ this is my data, Congratulations you have managed to enter here :s
 
 
 /* Variables */
-
 :root {
-  --theme-name: "Tranquil";
+  --theme-name: "Reborn";
+  --blackout: black;
+  --dark: #333;
+  --lighter: #666;
+  --bright: #ccc;
+  --background-blur: 0px;
+  --popup-blur: 0px;
+  --background-darkness: 0.75
 }
 
   /* Dark Mode */ 
